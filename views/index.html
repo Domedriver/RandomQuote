@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FCC Randome Quote Generator</title>
+    <meta name="description" content="Add a quote or get a quote">    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+  </head>
+  <body>
+    <h1>FCC Random Quote Generator</h1>
+<div id="text-container">
+  <div id="add-quote">
+    <h2>Add a Quote</h2>
+    <form id="quote-form" action="/api/addquote" method="post">
+      <div class="question-row">
+        <div class="question">
+          <label>Quote:</label>
+        </div>
+        <div class="answer">
+          <textarea name="quote" required="required" placeholder="Please enter quote here..."></textarea>
+        </div>
+      </div>
+      <div class="question-row">
+        <div class="question">
+          <label>Author:</label>
+        </div>
+        <div class="answer">
+          <input type="text" required="required" name="author" placeholder="Enter author of quote"> 
+        </div>
+      </div>
+      <div class="question-row">
+        <div class="question">
+          <label>FCC Camper:</label>
+        </div>
+        <div class="answer">
+          <input type="text" name="camper" placeholder="Enter your name (not required)"> 
+        </div>  
+      </div>
+      <div class="question-row">
+        <div class="question">
+          <label>FCC Camper Profile:</label>
+        </div>
+        <div class="answer">
+          <input type="text" name="camper_link" placeholder="Enter link to your profile (not required)">      
+        </div>
+      </div>
+      <div class="buttonholder">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>  
+  <div id="get-quote">
+    <h2>Get a Quote</h2>
+    <h3>Instructions</h3>
+    <div id="instruct-container">
+      <ul>
+        <li>Help Campers complete their Random Quote Machine challenge by contributing a quote.</li>
+        <li>It can be anything, from something said by a famous historical figure, or maybe your favorite movie character or possibly even you!</li>
+        <li>Feel free to include your name and profile link and maybe Campers will give you a shout-out in their projects!</li>
+        <li>To get a random quote:<br> <code>https://coordinated-face.glitch.me/api/quote</code></li>        
+      </ul>
+    </div>
+  </div>  
+</div>
+  </body>
+</html>

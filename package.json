@@ -1,4 +1,4 @@
-{   
+{
   "description": "Simple app for making and getting random quotes",
   "main": "server.js",
   "scripts": {
@@ -6,9 +6,11 @@
   },
   "dependencies": {
     "express": "^4.16.4",
-    "body-parser": "^1.15.2",
-    "mongoose": "^5.4.3",
-    "mongodb": "^2.2.14"
+    "body-parser": "^1.18.3",
+    "mongoose": "^5.4.5",
+    "mongodb": "^3.1.11",
+    "cors": "^2.8.5"
+    
   },
   "engines": {
     "node": "8.x"

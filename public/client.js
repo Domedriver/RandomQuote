@@ -94,10 +94,10 @@ function makeDonut(quotes) {
         .attr('id', function(d, i) {return 'arc_'+i})
         .attr('d', arc)
         .style('fill', function(d) {return color(d.data.category)})
-        /*.transition()
+        .transition()
         .ease(d3.easeLinear)
         .duration(1000)
-        .attrTween('d', pieTween)*/
+        .attrTween('d', pieTween)
       
       
       /*g.append('text')        

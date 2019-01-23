@@ -19,7 +19,8 @@ var quoteSchema = new mongoose.Schema({
   fccCamper: String,
   camper_link: String,
   date: Date
-}, {capped: {size: 64, max: 100}});
+});
+//}, {capped: {size: 64, max: 100}});
 
 
 var quoteCounterSchema = new mongoose.Schema({
